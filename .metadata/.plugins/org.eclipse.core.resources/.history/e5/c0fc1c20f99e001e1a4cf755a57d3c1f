@@ -1,0 +1,76 @@
+package com.CodSoft.task;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomNumberGenerator1 {
+
+	public static void main(String[] args) {
+		
+		Random obj=new Random();
+		int org=obj.nextInt(100);
+		int limit=5;
+		
+		System.out.println(org);
+		
+		int num=0;
+		int nguess=0;
+		System.out.println("Enter Number from 1 to 100");
+		
+		
+		while(limit<=5) {
+			
+			do {
+				Scanner sc=new Scanner(System.in);
+				
+					num=sc.nextInt();
+				
+				
+				
+				if(num<org) {
+					System.out.println("Number is Small....Enter Big Number");
+				}else if(num>org) {
+					System.out.println("Number is Big......Enter Small Number");
+				}
+				
+					
+				
+				
+				nguess++;
+			}while(num!=org);
+			
+			
+			
+			limit++;
+		}
+		
+		
+		
+		do {
+			Scanner sc=new Scanner(System.in);
+			
+				num=sc.nextInt();
+			
+			
+			
+			if(num<org) {
+				System.out.println("Number is Small....Enter Big Number");
+			}else if(num>org) {
+				System.out.println("Number is Big......Enter Small Number");
+			}
+			
+				
+			
+			
+			nguess++;
+		}while(num!=org);
+		
+		if(num==org) {
+			System.out.println("You Guess The Number ");
+			System.out.println("Your Guess Score is "+nguess);
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,86 @@
+package com.CodSoft.task;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomNumberGenerator1 {
+
+	public static void main(String[] args) {
+		
+		Random obj=new Random();
+		Scanner sc=new Scanner(System.in);
+		
+		
+		
+		
+		int num=0;
+		int nguess=0;
+		int attemptsLimits=5;
+		int rounds=0;
+		int totalScore=0;
+		
+		boolean restart=true;
+		
+		while(restart) {
+			int org=obj.nextInt(100);
+			System.out.println(org);
+			int attempt=0;
+			System.out.println("Welcome");
+			System.out.println("Enter Number from 1 to 100");
+			
+			while(attempt<attemptsLimits) {
+				
+				System.out.println("enter no");
+				num=sc.nextInt();
+				attempt++;
+				
+				if(num==org) {
+					System.out.println("You Guess The Number ");
+					System.out.println("Your Guess Score is "+attempt);
+					
+				
+				totalScore+=attempt;
+				break;
+				}
+				else if(num<org) {
+						System.out.println("Number is Small....Enter Big Number");
+						
+					}
+				else {
+					System.out.println("Number is Big......Enter Small Number");
+				}
+				
+			}
+			
+			if(attempt==attemptsLimits) {
+				System.out.println("Sorry"+org);
+			}
+			rounds++;
+			
+			
+			
+			System.out.println("want play again");
+			
+			String ch=sc.next();
+			restart=ch.equalsIgnoreCase("yes");
+		
+			
+			
+		}
+		
+		System.out.println("well played"+rounds+" score"+totalScore);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		
+
+	}
+
+}

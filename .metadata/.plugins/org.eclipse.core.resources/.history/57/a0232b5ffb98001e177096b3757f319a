@@ -1,0 +1,57 @@
+package com.CodSoft.task;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RandomNumberGenerator {
+
+	public static void main(String[] args) {
+    
+		Scanner sc=new Scanner(System.in);
+		Random obj= new Random();
+		int org=obj.nextInt(100);
+		
+		System.out.println(org);
+		
+		System.out.println("Guess the Number");
+		int num=sc.nextInt();
+		
+	boolean res=isGuessNumber(num,org);
+		
+	}//end of main
+	
+	
+	public static boolean isGuessNumber(int num , int org) {
+		
+		
+		if(num>org) {
+			System.out.println("Number is big");
+			System.out.println("please enter small Number");
+			
+		}
+		if(num<org) {
+			System.out.println("Number is small");
+			System.out.println("please enter big Number");
+		}
+		if(num==org) {
+			System.out.println("Congo You Did");
+			
+			
+		}
+		
+		return true;
+		
+		
+		
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+
+}

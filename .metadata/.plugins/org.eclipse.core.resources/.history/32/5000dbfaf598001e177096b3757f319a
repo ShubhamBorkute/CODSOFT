@@ -1,0 +1,15 @@
+package com.CodSoft.task;
+
+import java.util.Random;
+
+public class RandomNumberGenerator {
+
+	public static void main(String[] args) {
+    
+		Random obj= new Random();
+		int number=obj.nextInt(100);
+		
+		System.out.println(number);
+	}
+
+}
