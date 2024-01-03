@@ -74,10 +74,8 @@ public class RandomNumberGenerator {
               //Giving Choice
 			String choice = sc.next();
 			reset = choice.equalsIgnoreCase("yes");
-
 		}
-
-		System.out.println("Thanks for playing " + "Your Win score is : " + totalScore + " ,Your Attempt round is : " +rounds +".");
+	System.out.println("Thanks for playing " + "Your Win score is : " + totalScore + " ,Your Attempt round is : " +rounds +".");
 
 	}
 
