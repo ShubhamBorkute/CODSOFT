@@ -1,4 +1,19 @@
-package com.CodSoft.task;
+Hello My Dear Connections!!
+
+Excited to share my first project at CodSoft! 🎮🔢
+
+👨‍💻 During my internship, I had the fantastic opportunity to work on Task 1, and I'm thrilled to present my video explanation of the Number Guessing Game! 🎥💡
+
+🔍 Task 1 involved creating a fun and interactive number guessing game in Java. I delved into user input, random number generation, and loop structures to make this game engaging and challenging.
+
+Here is my repo of this task: https://lnkd.in/gFQvZ_87
+
+🕹️💡 My video breaks down the game logic, showcases the code structure, and explains the user interaction step-by-step. I'm proud of the results and eager to share my learning journey!
+
+
+💬 I'd love to hear your thoughts and feedback on the project! Feel free to watch the video and drop your comments or questions below.🌟
+
+#codsoft #JavaProgramming #NumberGuessingGame #internshipjourneypackage com.CodSoft.task;
 
 import java.util.Random;
 import java.util.Scanner;
