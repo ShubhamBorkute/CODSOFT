@@ -55,16 +55,10 @@ public class AtmInterface {
 						System.out.println("\n***Your Account block for 24 hour***");
 						System.out.println("Thank you for banking with us");
 						return ;
-					
-					
+						
 					
 				}
 				
-				
-			
-			
-			
-			
 			
 				
 				System.out.println("What Would You Like to do");
@@ -193,40 +187,8 @@ public class AtmInterface {
 
 		}
 
-		/*
 		
-		
-		
-		
-			
-			int st1;
-			
-		
-		
-		
-		
-		
-		
-			}
-		System.out.println("Enter Your 4 digit Pin number");
-		int pin=sc.nextInt();
-		
-		
-		
-		sc.close();*/
-	}//end of main
-
-
-	
-		
-		
-		
-		
-		
-		
-	
-		
-		
+	}//end of main		
 
 	}
 
